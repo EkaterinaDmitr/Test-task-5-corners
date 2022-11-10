@@ -1,0 +1,71 @@
+.select {
+  display: block;
+  width: 100%;
+  position: relative;
+}
+
+.new-select {
+  position: relative;
+  border-bottom: 1px solid #9F9F9F;
+  padding: 7px 0;
+  cursor: pointer;
+  user-select: none;
+  color: #9F9F9F;
+}
+
+.on {
+  color: #000;
+}
+
+.new-select__list {
+  position: absolute;
+  top: 38px;
+  left: 0;
+  border: 1px solid #9F9F9F;
+  border-radius: 0 0 5px 5px;
+  cursor: pointer;
+  width: 100%;
+  z-index: 2;
+  background: #fff;
+  user-select: none;
+}
+
+.new-select__list.on {
+  display: block;
+}
+
+.new-select__item span {
+  display: block;
+  padding: 10px 15px;
+  color: #9F9F9F;
+}
+
+.new-select__item span:hover {
+  color: #000;
+}
+
+.new-select:after {
+  content: "";
+  display: block;
+  width: 17px;
+  height: 10px;
+  position: absolute;
+  right: 4px;
+  top: 15px;
+  background: url("../img/arrow.svg") no-repeat right center/cover;
+  opacity: 0.6;
+  -webkit-transition: all 0.27s ease-in-out;
+  -o-transition: all 0.27s ease-in-out;
+  transition: all 0.27s ease-in-out;
+  -webkit-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+}
+
+.new-select.on:after {
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  transform: rotate(180deg);
+}

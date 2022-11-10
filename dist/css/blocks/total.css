@@ -1,0 +1,40 @@
+.total {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: 700;
+  font-size: 40px;
+  padding: 56px 30px;
+  color: #FFF;
+  background: #000000;
+  opacity: 0.8;
+  width: 103%;
+  height: 10%;
+  margin-top: 565px;
+}
+.total p {
+  margin: 0;
+}
+@media (max-width: 1020px) {
+  .total {
+    font-size: 26px;
+    color: #000;
+    background: transparent;
+    padding: 0 15px 0 0;
+    margin-top: -111px;
+  }
+}
+
+.total__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.total__price {
+  margin-right: 12px;
+}
+@media (max-width: 320px) {
+  .total__price {
+    margin-right: 8px;
+  }
+}
